@@ -29,7 +29,8 @@ public class NavigationNode(
 @Serializable
 @SerialName("spacer")
 public class Spacer : Node()  {
-    @Transient public override val type: String = "spacer"
+    @Transient public override val type: String = "spacer",
+    public val title: String,
 
     override fun toString(): String =
         "Spacer()"
